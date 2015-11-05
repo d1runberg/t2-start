@@ -1,1 +1,8 @@
+---
+layout: default
+---
 
+{% capture include_install %}
+{% include_relative SSH.md %}
+{% endcapture %}
+{{ include_install | markdownify }}
